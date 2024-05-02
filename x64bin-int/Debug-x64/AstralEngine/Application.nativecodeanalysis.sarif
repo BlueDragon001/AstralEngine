@@ -1,0 +1,51 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.39.33523.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///h:/dev/astralengine/astralengine/src/astral/application.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "ecd9886cea58bacd7eb890f96a2a8caf2ef213a09850f3ef3a415e59979b6d4b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/dev/astralengine/astralengine/src/astral/application.h"
+          },
+          "hashes": {
+            "sha-256": "d7f83dcccfdc4f7c258d317d7507ffdb164585e2f8c17328b09a4924e3a35252"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///h:/dev/astralengine/astralengine/src/astral/core.h"
+          },
+          "hashes": {
+            "sha-256": "723ea3795020a3561fdf24cecf59d610c73a91882f752a522d74e4f5227ac7b9"
+          }
+        }
+      ]
+    }
+  ]
+}
