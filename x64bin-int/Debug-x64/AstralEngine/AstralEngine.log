@@ -9,4 +9,7 @@ H:\Dev\AstralEngine\AstralEngine\src\Astral\Log.h(18,42): warning C4251: 'Astral
   C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
   see declaration of 'std::shared_ptr<spdlog::logger>'
   
+  Application.cpp
+  Generating Code...
+     Creating library H:\Dev\AstralEngine\x64bin\Debug-x64\AstralEngine\AstralEngine.lib and object H:\Dev\AstralEngine\x64bin\Debug-x64\AstralEngine\AstralEngine.exp
   AstralEngine.vcxproj -> H:\Dev\AstralEngine\x64bin\Debug-x64\AstralEngine\AstralEngine.dll

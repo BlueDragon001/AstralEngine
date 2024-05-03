@@ -3,29 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AstralEngine", "AstralEngine\AstralEngine.vcxproj", "{FCF0C89D-389F-4168-9440-8C2A53E2741F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
+		Dist|x64 = Dist|x64
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{FCF0C89D-389F-4168-9440-8C2A53E2741F}.Debug|x64.ActiveCfg = Debug|x64
 		{FCF0C89D-389F-4168-9440-8C2A53E2741F}.Debug|x64.Build.0 = Debug|x64
+		{FCF0C89D-389F-4168-9440-8C2A53E2741F}.Dist|x64.ActiveCfg = Dist|x64
+		{FCF0C89D-389F-4168-9440-8C2A53E2741F}.Dist|x64.Build.0 = Dist|x64
 		{FCF0C89D-389F-4168-9440-8C2A53E2741F}.Release|x64.ActiveCfg = Release|x64
 		{FCF0C89D-389F-4168-9440-8C2A53E2741F}.Release|x64.Build.0 = Release|x64
 		{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}.Debug|x64.ActiveCfg = Debug|x64
 		{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}.Debug|x64.Build.0 = Debug|x64
+		{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}.Dist|x64.ActiveCfg = Dist|x64
+		{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}.Dist|x64.Build.0 = Dist|x64
 		{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}.Release|x64.ActiveCfg = Release|x64
 		{E1BC7B6E-09BC-4D2D-B711-965D8542FD0E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A680E636-AF9E-46AA-B418-85AA1D387908}
 	EndGlobalSection
 EndGlobal
