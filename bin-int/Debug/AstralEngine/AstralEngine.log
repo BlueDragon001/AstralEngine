@@ -1,0 +1,5 @@
+﻿  AstralEngine.vcxproj -> H:\Dev\AstralEngine\bin\Debug\AstralEngine\AstralEngine.dll
+  The system cannot find the path specified.
+          0 file(s) copied.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: The command "copy /B /Y ..\bin\Debug\AstralEngine\AstralEngine.dll ..\x64bin\Debug-x64Debug\Sandbox
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(166,5): error MSB3073: :VCEnd" exited with code 1.

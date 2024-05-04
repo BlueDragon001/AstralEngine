@@ -7,24 +7,24 @@ workspace "AstralEngine"
 		"Release",
 		"Dist"
 	}
-outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+outputdir = "%{cfg.buildcfg}-x64"
 
 project "AstralEngine"
 	location "AstralEngine"
 	kind "SharedLib"
 	language "C++"
-	targetdir("bin/" .. outputdir .. "/%{prj.name}")
-	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir("bin/" .. outputdir .. "/AstralEngine")
+	objdir("bin-int/" .. outputdir .. "/AstralEngine")
 
 	files
 	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"AstralEngine/src/**.h",
+		"AstralEngine/src/**.cpp"
 	}
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include/spdlog"
+		"$(SolutionDir)AstralEngine/vendor/spdlog/include"
 	}
 
 	filter "system:windows"
@@ -40,7 +40,7 @@ project "AstralEngine"
 
 		postbuildcommands
 		{
-			("{COPYFILE} %{cfg.buildtarget.relpath} ../bin/" ..outputdir.. "/Sandbox")
+			("{COPYFILE} %{cfg.buildtarget.relpath} ../x64bin/" ..outputdir.. "/Sandbox")
 		}
 	filter "configurations:Debug"
 		defines "AE_DEBUG"
@@ -56,20 +56,21 @@ project "Sandbox"
 	location "Sandbox"
 	kind "ConsoleApp"
 	language "C++"
-	targetdir("bin/" .. outputdir .. "/%{prj.name}")
-	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir("bin/" .. outputdir .. "/Sandbox")
+	objdir("bin-int/" .. outputdir .. "/Sandbox")
 
 	files
 	{
-		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"Sandbox/src/**.h",
+		"Sandbox/src/**.cpp"
 	}
 
 	includedirs
 	{
-		"%{prj.name}/vendor/spdlog/include/spdlog",
+		"$(SolutionDir)AstralEngine/vendor/spdlog/include",
 		"AstralEngine/src"
 	}
+
 
 	filter "system:windows"
 		cppdialect "C++20"

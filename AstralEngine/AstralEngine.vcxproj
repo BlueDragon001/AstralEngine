@@ -70,6 +70,18 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /y /c "$(SolutionDir)x64bin\Debug-x64\AstralEngine\AstralEngine.dll" "$(SolutionDir)x64bin\Debug-x64\Sandbox"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copies DLLs to Executable's Directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -87,6 +99,18 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /y /c "$(SolutionDir)x64bin\Debug-x64\AstralEngine\AstralEngine.dll" "$(SolutionDir)x64bin\Debug-x64\Sandbox"</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copies DLLs to Executable's Directory</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

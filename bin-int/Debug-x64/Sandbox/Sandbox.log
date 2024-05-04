@@ -1,0 +1,23 @@
+﻿  SandboxApp.cpp
+H:\Dev\AstralEngineFuckedByPremaker5\AstralEngine\src\Astral\Core.h(7,1): warning C4005: 'ASTRAL_API': macro redefinition
+  (compiling source file 'src/SandboxApp.cpp')
+  H:\Dev\AstralEngineFuckedByPremaker5\AstralEngine\src\Astral\Core.h(7,1):
+  'ASTRAL_API' previously declared on the command line
+  
+H:\Dev\AstralEngineFuckedByPremaker5\AstralEngine\src\Astral\Log.h(17,42): warning C4251: 'AstralEngine::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'AstralEngine::Log'
+  (compiling source file 'src/SandboxApp.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+H:\Dev\AstralEngineFuckedByPremaker5\AstralEngine\src\Astral\Log.h(18,42): warning C4251: 'AstralEngine::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'AstralEngine::Log'
+  (compiling source file 'src/SandboxApp.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\memory(1525,7):
+  see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+SandboxApp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: __cdecl AstralEngine::Application::Application(void)" (__imp_??0Application@AstralEngine@@QEAA@XZ) referenced in function "public: __cdecl Sandbox::Sandbox(void)" (??0Sandbox@@QEAA@XZ)
+SandboxApp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: virtual __cdecl AstralEngine::Application::~Application(void)" (__imp_??1Application@AstralEngine@@UEAA@XZ) referenced in function "public: virtual __cdecl Sandbox::~Sandbox(void)" (??1Sandbox@@UEAA@XZ)
+SandboxApp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: void __cdecl AstralEngine::Application::Run(void)" (__imp_?Run@Application@AstralEngine@@QEAAXXZ) referenced in function main
+SandboxApp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static void __cdecl AstralEngine::Log::Init(void)" (__imp_?Init@Log@AstralEngine@@SAXXZ) referenced in function main
+SandboxApp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static class std::shared_ptr<class spdlog::logger> & __cdecl AstralEngine::Log::GetCoreLogger(void)" (__imp_?GetCoreLogger@Log@AstralEngine@@SAAEAV?$shared_ptr@Vlogger@spdlog@@@std@@XZ) referenced in function main
+SandboxApp.obj : error LNK2019: unresolved external symbol "__declspec(dllimport) public: static class std::shared_ptr<class spdlog::logger> & __cdecl AstralEngine::Log::GetClientLogger(void)" (__imp_?GetClientLogger@Log@AstralEngine@@SAAEAV?$shared_ptr@Vlogger@spdlog@@@std@@XZ) referenced in function main
+..\bin\Debug-x64\Sandbox\Sandbox.exe : fatal error LNK1120: 6 unresolved externals
