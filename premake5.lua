@@ -24,7 +24,8 @@ project "AstralEngine"
 
 	includedirs
 	{
-		"$(SolutionDir)AstralEngine/vendor/spdlog/include"
+		"$(SolutionDir)AstralEngine/vendor/spdlog/include",
+		"$(SolutionDir)AstralEngine/src"
 	}
 
 	filter "system:windows"
@@ -68,7 +69,7 @@ project "Sandbox"
 	includedirs
 	{
 		"$(SolutionDir)AstralEngine/vendor/spdlog/include",
-		"AstralEngine/src"
+		"(SolutionDir)AstralEngine/src"
 	}
 
 

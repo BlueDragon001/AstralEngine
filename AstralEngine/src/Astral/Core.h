@@ -9,4 +9,4 @@
 #else
 	#error Astral Engine only Supports Windows!
 #endif // AE_PLATFORM_WINDOWS
-
+#define BIT(x) (1 << x)

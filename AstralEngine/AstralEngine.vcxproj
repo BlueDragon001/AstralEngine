@@ -11,6 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\aepch.h" />
+    <ClInclude Include="src\Astral\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Astral\Events\Event.h" />
+    <ClInclude Include="src\Astral\Events\KeyEvent.h" />
+    <ClInclude Include="src\Astral\Events\MouseEvent.h" />
     <ClInclude Include="src\Astral\Log.h" />
     <ClInclude Include="src\AstralEngine.h" />
     <ClInclude Include="src\Astral\Application.h" />
@@ -18,6 +23,10 @@
     <ClInclude Include="src\Astral\Entrypoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\aepch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="src\Astral\Log.cpp" />
     <ClCompile Include="src\Astral\Application.cpp" />
   </ItemGroup>
@@ -64,7 +73,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)AstralEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)AstralEngine\vendor\spdlog\include;$(SolutionDir)AstralEngine\src;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>aepch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -91,7 +103,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>AE_PLATFORM_WINDOWS;AE_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)AstralEngine\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)AstralEngine\vendor\spdlog\include;$(SolutionDir)AstralEngine\src;</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>aepch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

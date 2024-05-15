@@ -1,5 +1,7 @@
+h:\dev\astralengine\x64bin-int\debug-x64\astralengine\astralengine.pch
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\vc143.pdb
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\vc143.idb
+h:\dev\astralengine\x64bin-int\debug-x64\astralengine\aepch.obj
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\application.obj
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\log.obj
 h:\dev\astralengine\x64bin\debug-x64\astralengine\astralengine.dll
@@ -7,6 +9,9 @@ h:\dev\astralengine\x64bin\debug-x64\astralengine\astralengine.pdb
 h:\dev\astralengine\x64bin\debug-x64\astralengine\astralengine.lib
 h:\dev\astralengine\x64bin\debug-x64\astralengine\astralengine.exp
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\astralengine.ilk
+h:\dev\astralengine\x64bin-int\debug-x64\astralengine\application.nativecodeanalysis.xml
+h:\dev\astralengine\x64bin-int\debug-x64\astralengine\log.nativecodeanalysis.xml
+h:\dev\astralengine\x64bin-int\debug-x64\astralengine\vc.nativecodeanalysis.all.xml
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\astralengine.vcxproj.filelistabsolute.txt
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\astralengine.tlog\cl.command.1.tlog
 h:\dev\astralengine\x64bin-int\debug-x64\astralengine\astralengine.tlog\cl.items.tlog

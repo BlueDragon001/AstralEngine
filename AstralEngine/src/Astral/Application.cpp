@@ -1,3 +1,4 @@
+#include <aepch.h>
 #include "Application.h"
 namespace AstralEngine {
 	Application::Application() {

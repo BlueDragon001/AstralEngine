@@ -1,3 +1,4 @@
+#include <aepch.h>
 #include "Log.h"
 
 namespace AstralEngine {
