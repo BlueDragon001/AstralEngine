@@ -1,3 +1,6 @@
 [submodule "AstralEngine/vendor/spdlog"]
 	path = AstralEngine/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "AstralEngine/vendor/GLFW"]
+	path = AstralEngine/vendor/GLFW
+	url = https://github.com/BlueDragon001/glfw

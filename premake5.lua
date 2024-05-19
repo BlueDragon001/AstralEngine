@@ -9,12 +9,19 @@ workspace "AstralEngine"
 	}
 outputdir = "%{cfg.buildcfg}-x64"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "AstralEngine/vendor/GLFW/include"
+include  "AstralEngine/vendor/GLFW"
+
 project "AstralEngine"
 	location "AstralEngine"
 	kind "SharedLib"
 	language "C++"
 	targetdir("bin/" .. outputdir .. "/AstralEngine")
 	objdir("bin-int/" .. outputdir .. "/AstralEngine")
+
+	pchheader "aepch.h"
+	pchsource "Astral/src/aepch.cpp"
 
 	files
 	{
@@ -25,7 +32,14 @@ project "AstralEngine"
 	includedirs
 	{
 		"$(SolutionDir)AstralEngine/vendor/spdlog/include",
-		"$(SolutionDir)AstralEngine/src"
+		"$(SolutionDir)AstralEngine/src",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
