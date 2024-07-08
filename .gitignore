@@ -3,7 +3,6 @@
 bin-int/
 Intermediates/
 
-# Hazel files
 
 # Visual Studio files and folder
 .vs/
