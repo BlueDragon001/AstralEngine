@@ -1,0 +1,44 @@
+[01:45:03] [info] HAZEL: Creating window Astral Engine (1600, 900)
+[01:45:04] [info] HAZEL: OpenGL Info:
+[01:45:04] [info] HAZEL:   Vendor: ATI Technologies Inc.
+[01:45:04] [info] HAZEL:   Renderer: AMD Radeon(TM) Vega 8 Graphics
+[01:45:04] [info] HAZEL:   Version: 4.6.13596 Compatibility Profile/Debug Context 20.10.32 27.20.1032.2
+[01:45:04] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Quad.glsl
+[01:45:04] [trace] HAZEL:     1 uniform buffers
+[01:45:04] [trace] HAZEL:     0 resources
+[01:45:04] [trace] HAZEL: Uniform buffers:
+[01:45:04] [trace] HAZEL:   _46_48
+[01:45:04] [trace] HAZEL:     Size = 64
+[01:45:04] [trace] HAZEL:     Binding = 0
+[01:45:04] [trace] HAZEL:     Members = 1
+[01:45:04] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Quad.glsl
+[01:45:04] [trace] HAZEL:     0 uniform buffers
+[01:45:04] [trace] HAZEL:     1 resources
+[01:45:04] [trace] HAZEL: Uniform buffers:
+[01:45:04] [warning] HAZEL: Shader creation took 78.3773 ms
+[01:45:04] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Circle.glsl
+[01:45:04] [trace] HAZEL:     1 uniform buffers
+[01:45:04] [trace] HAZEL:     0 resources
+[01:45:04] [trace] HAZEL: Uniform buffers:
+[01:45:04] [trace] HAZEL:   _47_49
+[01:45:04] [trace] HAZEL:     Size = 64
+[01:45:04] [trace] HAZEL:     Binding = 0
+[01:45:04] [trace] HAZEL:     Members = 1
+[01:45:04] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Circle.glsl
+[01:45:04] [trace] HAZEL:     0 uniform buffers
+[01:45:04] [trace] HAZEL:     0 resources
+[01:45:04] [trace] HAZEL: Uniform buffers:
+[01:45:04] [warning] HAZEL: Shader creation took 23.8474 ms
+[01:45:04] [trace] HAZEL: OpenGLShader::Reflect - GL_VERTEX_SHADER assets/shaders/Renderer2D_Line.glsl
+[01:45:04] [trace] HAZEL:     1 uniform buffers
+[01:45:04] [trace] HAZEL:     0 resources
+[01:45:04] [trace] HAZEL: Uniform buffers:
+[01:45:04] [trace] HAZEL:   _30_32
+[01:45:04] [trace] HAZEL:     Size = 64
+[01:45:04] [trace] HAZEL:     Binding = 0
+[01:45:04] [trace] HAZEL:     Members = 1
+[01:45:04] [trace] HAZEL: OpenGLShader::Reflect - GL_FRAGMENT_SHADER assets/shaders/Renderer2D_Line.glsl
+[01:45:04] [trace] HAZEL:     0 uniform buffers
+[01:45:04] [trace] HAZEL:     0 resources
+[01:45:04] [trace] HAZEL: Uniform buffers:
+[01:45:04] [warning] HAZEL: Shader creation took 18.9755 ms

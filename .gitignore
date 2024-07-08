@@ -1,0 +1,15 @@
+# Binaries
+**/bin/
+bin-int/
+Intermediates/
+
+# Hazel files
+
+# Visual Studio files and folder
+.vs/
+
+
+# Directories
+Hazel/vendor/VulkanSDK
+Hazelnut/assets/cache
+scripts/__pycache__
